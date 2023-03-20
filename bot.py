@@ -62,8 +62,10 @@ async def generate_img_with_circles(interaction: Interaction, width:int=1280, he
     image.save('image.png')
     with open('image.png', 'rb') as f:
         img = File(f)
+    download = Button(label='Download', url="https://www.google.com", emoji="💾")
     mint = Button(label="Mint", url="https://www.google.com")
     myview = View(timeout=180)
+    myview.add_item(download)
     myview.add_item(mint)
     await interaction.response.send_message(file=img, view=myview)
 
@@ -73,11 +75,13 @@ async def generate_img_with_shapes(interaction: Interaction, width:int=1280, hei
     image.save('image.png')
     with open('image.png', 'rb') as f:
         img = File(f)
+    download = Button(label='Download', url="https://github.com", emoji="💾")
     mint = Button(label="Mint", url="https://www.google.com")
     myview = View(timeout=180)
+    myview.add_item(download)
     myview.add_item(mint)
     await interaction.response.send_message(file=img, view=myview)
-
+    
 
 token = "your_discord_bot_token"
 bot.run(token)
