@@ -1,5 +1,5 @@
 # VariantArt
-##VariantArt🎨 is a bot that generates algorithmic art which can be further minted as NFT by users or users can download generated arts.
+## VariantArt🎨 is a bot that generates algorithmic art which can be further minted as NFT by users or users can download generated arts.
 
 ---
 # Steps to run it locally:
